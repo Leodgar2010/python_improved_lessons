@@ -12,35 +12,30 @@
 import typing
 def read_per_line (file_obj:typing.TextIO):
     line = file_obj.readline()
-    if line == "":
+    if line == '':
         file_obj.seek(0)
-        line = file_obj.readline
-    return line
-
+        line = file_obj.readline()
+    return line[:-1]
 def my_func(numbers, names, result):
     with (
         open(numbers, 'r', encoding='utf-8') as nums,
         open(names, 'r', encoding='utf-8') as nam,
-        open(result, 'a', encoding='utf-8') as res
+        open(result, 'w', encoding='utf-8') as res
     ):
-        len_names = sum(1 for _ in nam)
-        len_numbers= sum(1 for _ in nums)
-        for _ in range (max(len_names,len_numbers)):
-            name = read_per_line(nam)
-            num_line=read_per_line(nums)
-            a= nums.split('|')
-            # int_num, float_num = int(int_num),float(float_num)
-            # print (int_num,float_num)
-        # for i in nums:
-        #     a= i.split('|')
-        #     print (a)
-        #     a = i.split("|")([0] * [1])
-        # for i in names:
-        #     b = nam.readlines()
-        # if a < 0:
-        #     a = abs(a)
-        #     b = str(b).lower()
-        # else:
-        #     a = int(a)
-        #     b = str(b).upper()
+        len_nam = sum(1 for _ in nam)
+        print (len_nam)
+        len_nums =sum (1 for _ in nums)
+        print (len_nums)
+        for i in range (max(len_nam,len_nums)):
+          name=read_per_line(nam)
+          print (name)
+          number=read_per_line(nums)
+          print (number)
+          a,b = map (float, number.rstrip().split('|'))
+          temp = a*b
+          if temp<0:
+                 res.write(f"{name.lower()} : {abs(temp)}\n")
+          else:
+                 res.write(f"{name.upper()} : {int(temp)}\n")
+
 my_func('numbers.txt','names.txt','result.txt')

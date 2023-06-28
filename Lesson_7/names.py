@@ -13,7 +13,7 @@ MAX_LENGHT = 7
 
 
 def write_names(filename, row_count):
-    with open(filename, 'a', encoding='utf-8') as f:
+    with open(filename, 'w', encoding='utf-8') as f:
         for _ in range(row_count):
             a = ""
             for i in range(randint(MIN_LENGHT, MAX_LENGHT)):

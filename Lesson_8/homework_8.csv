@@ -1,0 +1,24 @@
+name,Value
+homework_8.csv,{'Это файл': 875}
+homework_8.json,{'Это файл': 1085}
+homework_8.pickle,{'Это файл': 563}
+homework_8.py,{'Это файл': 2081}
+Lesson_7_task_3_result.txt,{'Это файл': 140}
+Lesson_8_1.json,{'Это файл': 146}
+Lesson_8_1.pickle,{'Это файл': 0}
+Lesson_8_1.py,{'Это файл': 923}
+Lesson_8_2.json,{'Это файл': 214}
+Lesson_8_2.pickle,{'Это файл': 164}
+Lesson_8_2.py,{'Это файл': 2064}
+Lesson_8_3.csv,{'Это файл': 117}
+Lesson_8_3.py,{'Это файл': 858}
+Lesson_8_4.json,{'Это файл': 586}
+Lesson_8_4.pickle,{'Это файл': 299}
+Lesson_8_4.py,{'Это файл': 1425}
+Lesson_8_5.csv,{'Это файл': 259}
+Lesson_8_5.py,{'Это файл': 659}
+Lesson_8_6.csv,{'Это файл': 259}
+Lesson_8_6.py,{'Это файл': 912}
+Lesson_8_7.py,{'Это файл': 438}
+__init__.py,{'Это файл': 0}
+__pycache__,{'Это директория': 4096}
